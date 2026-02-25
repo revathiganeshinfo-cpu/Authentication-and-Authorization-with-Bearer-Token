@@ -76,6 +76,7 @@ export const getUser = async (req, res) => {
       data: user,
     });
   } catch (error) {
+    console.log(error);
     res.status(500).json({ message: "Internal Server Error" });
   }
 };
